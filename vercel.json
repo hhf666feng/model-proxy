@@ -4,8 +4,7 @@
   "devCommand": "deno run --allow-net --allow-env src/proxy/vercel.ts",
   "functions": {
     "api/proxy.ts": {
-      "runtime": "vercel-deno@4.0.0",
-      "source": "src/proxy/vercel.ts"
+      "runtime": "vercel-deno@4.0.0"
     }
   },
   "regions": ["iad1", "sfo1", "lhr1"]
