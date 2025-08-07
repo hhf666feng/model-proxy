@@ -1,0 +1,18 @@
+{
+  "name": "model-proxy",
+  "version": "1.0.0",
+  "description": "AI Model Proxy Service for OpenAI/Claude/Groq APIs",
+  "main": "src/proxy/vercel.ts",
+  "scripts": {
+    "dev:vercel": "deno run --allow-net --allow-env src/proxy/vercel.ts",
+    "dev:deno": "deno run --allow-net --allow-env src/deployments/deno.ts",
+    "deploy:vercel": "vercel --prod",
+    "deploy:deno": "deployctl deploy --prod src/deployments/deno.ts"
+  },
+  "keywords": ["proxy", "ai", "openai", "claude", "groq", "vercel", "deno"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.x"
+  }
+}

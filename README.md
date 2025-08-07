@@ -18,7 +18,7 @@
 ### 选项 1：Deno Deploy 部署（推荐）
 1. 访问 [Deno Deploy 控制台](https://dash.deno.com/account/projects) 并登录
 2. 点击右上角 **New Playground** 创建新项目
-3. 复制项目中 `main.ts` 的完整代码粘贴到编辑器
+3. 复制项目中 `src/deployments/deno.ts` 的完整代码粘贴到编辑器
 4. 点击 **Save & Deploy**，获取部署域名（格式：`xxx.deno.dev`）
 
 
@@ -26,6 +26,15 @@
 1. 点击上方 **Deploy with Vercel** 按钮
 2. 关联 GitHub 账号并自动创建仓库（仓库名可自定义）
 3. 等待部署完成，获取域名（格式：`xxx.vercel.app`）
+
+### 本地开发
+```bash
+# Vercel 本地开发
+npm run dev:vercel
+
+# Deno 本地开发  
+npm run dev:deno
+```
 
 
 ## 快速使用指南

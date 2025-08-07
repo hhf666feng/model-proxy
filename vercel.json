@@ -1,11 +1,12 @@
 {
   "buildCommand": "echo 'No build needed'",
   "outputDirectory": ".",
-  "devCommand": "deno run --allow-net --allow-env api/proxy.ts",
+  "devCommand": "deno run --allow-net --allow-env src/proxy/vercel.ts",
   "functions": {
     "api/proxy.ts": {
-      "runtime": "vercel-deno@4.0.0"  # 使用 Vercel Deno 运行时
+      "runtime": "vercel-deno@4.0.0",
+      "source": "src/proxy/vercel.ts"
     }
   },
-  "regions": ["iad1", "sfo1", "lhr1"]  # 选择靠近目标 API 的区域（减少延迟）
+  "regions": ["iad1", "sfo1", "lhr1"]
 }
